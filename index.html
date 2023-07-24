@@ -12,6 +12,15 @@
 
     <script src="https://kit.fontawesome.com/87b840840b.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .font{
+            font-family: 'EB Garamond', serif;
+        }
+    </style>
     <script>
         tailwind.config = {
           theme: {
@@ -26,7 +35,7 @@
 
 </head>
 
-<body>
+<body class="font">
     <header>
         <nav>
             <div class="container mx-auto ">
@@ -67,12 +76,27 @@
                     </div>
                     <div class="navbar-end">
                       
-                        <a class="btn bg-btn-color text-white">Free Consultation</a>
+                        <a class="btn bg-btn-color text-white ml-2 sm:ml-1">Free Consultation</a>
                     </div>
                 </div>
 
             </div>
         </nav>
+
+        <!-- banner container -->
+        <section class="px-4 sm:py-12" >
+            <div  class=" container mx-auto  sm:bg-cover sm:bg-center sm:bg-no-repeat  lg:bg-right-top bg-center" style="background-image: url('./images/banner.png');">
+
+                <div class="text-white text-center  sm:pt-24  sm:pb-28 lg:pt-24 pb-28 items-center justify-center">
+                    <h1 class=" text-6xl lg:text-7xl font-extrabold mb-8">We Provide Effective <br> Legal Solutions</h1>
+                    <p class="text-base font-normal mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <input type="text" placeholder="Type here" class="mr-3 input input-bordered input-md  w-full max-w-lg mb-4 sm:mb-6" />
+                    <button class="btn sm:mt-2 lg: text-white bg-btn-color border-none ">Search</button>
+                </div>
+
+            </div>
+            
+        </section>
     </header>
     <main>
 
